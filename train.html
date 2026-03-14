@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Train-booking-ui</title>  
+  <link rel="stylesheet" href="train.css" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+<header class="header">
+    <div class="left-section">
+      <div class="menu-icon">&#9776;</div>
+      <img src="logo.png" alt="trainGurl Logo" class="logo" />
+      <span class="brand">trainGurl<sup>®</sup></span>
+    </div>
+  <nav class="nav-menu">
+   <a href="#">PNR Status</a>
+   <a href="#">Running Status</a>
+   <a href="#">Seat Availability</a>
+   <a href="#">Coach Position</a>
+   <div class="more-container">
+   <a href="#">More</a>
+    <div class="more-dropdown" id="more-dropdown">
+    <table>
+      <thead>
+        <tr>
+          <th>More Features</th>
+          <th>Train Facts</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#">Train Schedule</a></td>
+          <td><a href="#">IRCTC Q&A</a></td>
+          <td><a href="#">Indian Railway Quota</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Train Between Stations</a></td>
+          <td><a href="#">Train Categories</a></td>
+          <td><a href="#">Foreign Tourist Quota</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Fare Calculator</a></td>
+          <td><a href="#">Travel Blogs</a></td>
+          <td><a href="#">Tatkal Booking Tips</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Station Details</a></td>
+          <td><a href="#">Travel Classes</a></td>
+          <td><a href="#">Train Tips</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Trip Assurance</a></td>
+          <td><a href="#">Ticket Status</a></td>
+          <td><a href="#">trainGurl FAQs</a></td>
+         </tr>
+         <tr>
+          <td><a href="#">Free Cancellation</a></td>
+          <td><a href="#">Trends Analysis</a></td>
+          <td></td>
+          </tr>
+         </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="profile-container">
+     <a  href="#"><i class="fa-regular fa-user"></i></a>
+      <div class="profile-dropdown" id="profile-dropdown">
+       <ul>
+        <li><a href="#">Login</a></li>
+        <br>
+        <li><a href="#">Register</a></li>
+       </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="chat-box">
+  <img src="chat.png" alt="Chat Icon" class="chat-icon" />
+  <span>Chat Support</span>
+</div>
+
+
+<div id="overlay" class="overlay"></div>
+<div id="side-menu" class="side-menu">
+  <div class="side-header">
+    <i class="fa-regular fa-user"></i>
+    <a href="#">Login</a> 
+  </div>
+  <hr />
+  <h4>SERVICES</h4>
+  <a href="#">Home</a>
+  <a href="#">PNR Status</a>
+  <a href="#">Running Status</a>
+  <a href="#">Seat Availability</a>
+  <a href="#">Coach Position</a>
+  <a href="#">Train Schedule</a>
+  <a href="#">Train Between Stations</a>
+  <a href="#">Fare Calculator</a>
+  <a href="#">Station Details</a>
+  <a href="#">Trip Assurance</a>
+  <a href="#">Free Cancellation</a>
+  <hr />
+  <div class="dropdown">
+    <div class="dropdown-toggle">Train & Tips <i class="fa fa-chevron-down"></i></div>
+    <div class="dropdown-content">
+      <a href="#">IRCTC Q&A</a>
+      <a href="#">Train Categories</a>
+      <a href="#">Travel Blogs</a>
+      <a href="#">Travel Classes</a>
+      <a href="#">Ticket Status</a>
+      <a href="#">Trends Analysis</a>
+      <a href="#">Train Tips</a>
+      <a href="#">trainGurl FAQs</a>
+    </div>
+  </div>
+  <hr />
+  <div class="dropdown">
+    <div class="dropdown-toggle">Others <i class="fa fa-chevron-down"></i></div>
+    <div class="dropdown-content">
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+      <a href="#">Feedback</a>
+    </div>
+  </div>
+  <hr />
+  <h4>SCAN TO DOWNLOAD APP</h4>
+  <div class="footer-section">
+    <img src="qr.jpg" alt="QR Code" class="qr" />
+    <div class="app-logos">
+     <img src="logo.png" alt="trainGurl Logo" class="logo" />
+      <span class="brand">trainGurl<sup>®</sup></span>
+      <span>|</span>
+      <img src="logo2.png" alt="App2" />
+      <br /><br /><br />
+      <br />
+      <br />
+      <hr />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slide-container">
+  <div class="slide slide1 active">
+    <div class="slide-text">
+      <h1>Beat The Heat!</h1>
+      <p>Plan Your Summer Train Journey</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+  <div class="slide slide2">
+     <div class="slide-text">
+      <h2>Earn up to 7% Adani Reward Points</h2>
+      <p>Book train tickets via trainGurl with Adani One</p>
+      <button>Explore Now</button>
+      <h4>*T&C Apply</h4>
+    </div>
+  </div>
+  <div class="slide slide3">
+     <div class="slide-text">
+      <h1>Free Cancellation</h1>
+      <p>Full Refund on train ticket cancellation</p>
+      <button>Explore Now</button>
+      <h4>*T&C Apply</h4>
+    </div>
+  </div>
+  <div class="slide slide4">
+     <div class="slide-text">
+      <h1>Trip Assurance</h1>
+      <p>Get 3X fare refund or Free Flight</p>
+      <button>Explore Now</button>
+      <h4>*T&C Apply</h4>
+    </div>
+  </div>
+
+  <div class="arrow left">
+    <i class="fa-solid fa-circle-chevron-left"></i>
+  </div>
+  <div class="arrow right">
+    <i class="fa-solid fa-circle-chevron-right"></i>
+  </div>
+
+  <div class="dots">
+    <span class="dot dotactive"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+
+<div class="slide-form-wrapper">
+  <div class="form-bar">
+    <div class="form-left">
+      <label><input type="radio" name="formMode" value="book" checked> Book Train Tickets</label>
+      <label><input type="radio" name="formMode" value="pnr"> PNR Status</label>
+      <label><input type="radio" name="formMode" value="running"> Running Status</label>
+    </div>
+    <div class="form-right">
+      <img src="it.jpeg" alt="Train Image" />
+    </div>
+  </div>
+
+
+  <div class="form-fields">
+    <div class="form-row" id="form-book">
+      <input type="text" placeholder="From Station" />
+      <input type="text" placeholder="To Station" />
+      <input type="date" />
+      <label class="checkbox-label">
+        <input type="checkbox" id="cancel-check" />
+        <div class="cancel-text">
+        <div id="cancel-label-main"><strong>Free Cancellation included</strong></div>
+        <div class="cancel-sub">Pay ZERO cancellation charges</div>
+        </div>
+      </label>
+
+      <button class="search-btn">Search</button>
+    </div>
+
+    <!-- PNR -->
+    <div class="form-row hidden" id="form-pnr">
+      <input type="text" placeholder="Enter 10-digit PNR Number" />
+      <button class="search-btn">Check PNR Status</button>
+    </div>
+
+    <!-- Running -->
+    <div class="form-row hidden" id="form-running">
+      <input type="text" placeholder="Enter Train Number" />
+      <button class="search-btn">Search</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="main-container">
+ <div class="offer-container">
+   <div class="offer-header">
+     <h1>Offers and Discounts</h1>
+     <div class="arrows-buttons">
+       <button class="arrowl">
+         <i class="fa-solid fa-circle-chevron-left"></i>
+       </button>
+       <button class="arrowr">
+         <i class="fa-solid fa-circle-chevron-right"></i>
+       </button>
+     </div>
+   </div>
+ 
+   <div class="offer-img" id="offer-slider">
+    <img src="offer1.jpg" alt="offer1">
+    <img src="offer2.jpg" alt="offer2">
+    <img src="offer3.jpg" alt="offer3">
+    <img src="offer4.jpg" alt="offer4">
+   </div>
+  </div>
+
+
+
+
+ <div class="y-container">
+   <div class="y-header">
+     <h1>Why Book Train Tickets with Us?</h1>
+   </div>
+   <div class="y-features">
+     <div class="y-feature">
+       <img src="y1.png" alt="y1" />
+       <div class="y-text">
+         <h3>Free Cancellation</h3>
+         <p>Get a full refund on your ticket cancellation.</p>
+       </div>
+     </div>
+     <div class="y-feature">
+       <img src="y2.png" alt="y2" />
+       <div class="y-text">
+         <h3>94% Accurate Predictions</h3>
+         <p>Know your chances of ticket confirmation.</p>
+       </div>
+     </div>
+     <div class="y-feature">
+       <img src="y3.png" alt="y3" />
+       <div class="y-text">
+         <h3>No Payment Gateway Fee</h3>
+         <p>Zero Payment Gateway Charges via UPI mode.</p>
+       </div>
+     </div>
+     <div class="y-feature">
+       <img src="y4.png" alt="y4" />
+       <div class="y-text">
+         <h3>Expert Customer Support</h3>
+         <p>Get answers to all your queries within minutes.</p>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+ <div class="place-container">
+   <div class="place-header">
+     <h1>Popular Destinations</h1>
+     <div class="place-arrows-buttons">
+       <button class="place-arrowl"><i class="fa-solid fa-circle-chevron-left"></i></button>
+       <button class="place-arrowr"><i class="fa-solid fa-circle-chevron-right"></i></button>
+     </div>
+   </div>
+
+   <div class="place-scroll" id="place-slider">
+     <div class="place-card">
+       <img src="place1.jpg" alt="Place 1" />
+       <p>Mumbai</p>
+     </div>
+     <div class="place-card">
+       <img src="place2.jpg" alt="Place 2" />
+       <p>Ahamedabad</p>
+     </div>
+     <div class="place-card">
+       <img src="place3.jpg" alt="Place 3" />
+       <p>Varanasi</p>
+     </div>
+     <div class="place-card">
+       <img src="place4.jpg" alt="Place 4" />
+       <p>Luckow</p>
+     </div>
+     <div class="place-card">
+       <img src="place5.jpg" alt="Place 5" />
+       <p>Patna</p>
+     </div>
+     <div class="place-card">
+       <img src="place6.jpg" alt="Place 6" />
+       <p>Jaipur</p>
+     </div>
+     <div class="place-card">
+       <img src="place7.jpg" alt="Place 7" />
+       <p>Agra</p>
+     </div>
+     <div class="place-card">
+      <img src="place8.jpg" alt="Place 8" />
+       <p>Kolkata</p>
+     </div>
+     <div class="place-card">
+       <img src="place9.jpg" alt="Place 9" />
+       <p>Kerala</p>
+     </div>
+    
+   </div>
+ </div>
+
+
+
+
+
+ <div class="faqwrapper">
+   <h1>Frequently Asked Questions</h1>
+   
+   <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       Why book train tickets online with trainGurl?
+       <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+       <p>
+         Through trainGurl train tickets booking platform, traveling to your favourite destination is now easier than ever before...
+       </p>
+     </div>
+   </div>
+  
+   <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       How do I book train tickets online through trainGurl?
+       <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+       <p>
+         It's fairly simple to use trainGurl for online ticket booking, follow the simple procedure-
+       </p>
+       <ul>
+         <li>Visit the trainGurl website or trainGurl train booking mobile app</li>
+         <li>Select the starting & arrival destinations.</li>
+         <li>Select a train that you want to book train tickets for</li>
+         <li>Add your complete traveler's details</li>
+         <li>Proceed to our easy secure payment gateway.</li>
+         <li>Enter your original IRCTC username and password.</li>
+         <li>Train Ticket booking confirmation via Email, SMS, will be sent to you.</li>
+         <li>You can also check confirmed tickets in the My Trips option on our app/website</li>
+       </ul>
+       <p>That's it, online Indian railway ticket booking has never been easier.</p>
+     </div>
+   </div>
+  
+
+   <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       What is the maximum number of people I can book in a single train ticket booking?
+       <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+        <p>As per the train ticket booking policy, you can only add 6 persons to your railway ticket booking. Here are the steps you can follow-  </p>
+       <ul>
+         <li>Simply add the names and ages of the people traveling with you.</li>
+         <li>Fill in all the necessary details along with the berth preference and meal option and you are good to go.</li>
+       </ul>
+       <p>For tatkal tickets booking, the maximum number reduces to 4 persons per booking. Two children below 5 years are allowed per booking, but not ticketed. The details of these travelers are also to be specified while tatkal tickets booking, though they are not mentioned in the tickets.You can also choose the option to book the ticket when all berths are confirmed or all berths are in the same coach or if only one or two lower berths are provided.</p><br>
+       <p>You can also choose the option to book the ticket when all berths are confirmed or all berths are in the same coach or if only one or two lower berths are provided.</p>
+     </div>
+   </div>
+  
+
+   <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       I don't have an IRCTC username or password, what should I do?
+      <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+       <p>
+         It is important to have a username and password while booking an online ticket booking. But don't worry, as trainGurl can help you create your username and password so that you easily proceed with your train ticket booking.
+       </p>
+     </div>
+    </div>
+   
+
+    <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       How do I cancel my train ticket booking after confirmation?
+      <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+       <p>Don't worry, you can easily cancel your online train booking through our website and train ticket booking app for Play Store.      </p>
+       <ul>
+         <li>Login to your trainGurl Account</li>
+         <li>Go to “My Trips”</li>
+         <li>Select the train ticket you would like to cancel</li>
+         <li>Click on the “Cancel Order” button. And it's done!</li>
+         <li>Refund will be initiated to original Payment Source</li>
+       </ul>
+      </div>
+    </div>
+   
+  
+    <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       What are the cancellation charges for online train ticket booking?
+      <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+       <p>On cancellation of confirmed train tickets 48 hours before scheduled departure, charges will be:</p>
+       <ul>
+         <li>Rs. 240/- for AC First Class/Executive Class,</li>
+         <li>Rs. 200/- for AC 2 Tier/First Class,</li>
+         <li>Rs.180 for AC 3 Tier/AC Chair car/ AC 3 Economy,</li>
+         <li>Rs.120/- for Sleeper Class and</li>
+         <li>Rs. 60/- for Second Class.</li>
+       </ul>
+       <p>Please note- The cancellation charges are applicable per ticket per passenger and will be deducted before processing the refunds.</p>
+     </div>
+    </div>
+   
+   
+    <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       Why choose the trainGurl android app over other train bookings apps?
+      <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+       <p>Along with a seamless train ticket booking experience, Trainman offers tons of exciting benefits and features. We predict PNR status with 95 percent accuracy while letting our users track their trains even in offline mode. What's more about train ticket booking you might ask? We offer credits to all our Trainman wallet users if they use our Android app for railway ticket booking.</p>
+     </div>
+    </div>
+   
+
+   <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       How Tatkal ticket booking is done and what is it?
+      <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+      <p> Tatkal Booking in IRCTC is meant for last-minute and immediate plans. It's a feature that allows travelers to book train tickets online in case of emergencies. You can use the trainman app/website for tatkal tickets booking through IRCTC.</p>
+      <br>
+      <p>Tatkal timings start at 10:00 AM for AC train tickets and 11:00 AM for non-AC train tickets. Although it is recommended to plan your travel as the Tatkal quota in peak seasons and busiest routes are tough to get confirmed.</p>    
+     </div>
+    </div>
+    
+ 
+    <div class="faqdropdown">
+     <div class="faqdropdown-toggle">
+       How is Trainman different from others?
+      <i class="fa fa-chevron-down"></i></div>
+     <div class="faqdropdown-content">
+      <ul>
+       <li>Trainman is a one-stop-shop that helps enlighten the blind corners by providing software-led solutions to track and analyze the reservation data, enhance the user experience, and simplify checking running and PNR status.</li>
+       <li>Using valuable insights and predictive analysis, Trainman makes sense of a vast amount of data to efficiently predict ticket confirmation status with 95 percent accuracy.</li>
+       <li>Our app available for both iOS and Android, with over 10mn+ installations, helps people discover proactive ways to look for several trains between stations and easily book train tickets based on classes.</li>
+      </ul>
+      </div>
+    </div>
+   
+ </div>
+
+
+
+ <div class="booking">
+  <h1>Train Ticket Booking Online</h1>
+  <div id="content">
+    <span id="short-text">
+    We offer a hassle-free train ticket booking service online to everyone who loves to travel. To put it simply, train ticket booking through Trainman feels like a one-stop-shop solution that caters to every need related to train and coach travel. You can find all the latest news, train routes, and travel times from almost...
+    </span>
+    <div id="more-text" style="display: none;">
+      <p> all the coach operators with the Trainman train ticket booking android app available on the play store.</p> 
+      <p>To put it simply, train ticket booking through Trainman feels like a one-stop-shop solution that caters to every need related to train and coach travel. You can find all the latest news, train routes,and travel times from almost all the coach operators with the Trainman train ticket booking android app available on the play store.</p>
+      <p>If you have been plotting your travel for years and don't know where to begin, then our Train ticket booking platform seems like the perfect way to start. We help you buy train tickets online quickly and save your time, money, and effort. So you get to focus on enjoying the breathtaking scenery instead of going through the tireless paperwork.</p>
+      <p>You can search for train schedule tables, accurate PNR status predictions, and even use discount vouchers for your Trainman wallet while train ticket booking online.</p>
+      <p>We have the highest-rated train ticket booking app on Google Play Store. Our objective is to bring forth coach, train, and other several travel services under one single umbrella so you get the best prices and real-time travel information on the go.</p>
+      <p>No more getting tired in the lines, now conveniently search for live running status even when you are offline by just using your android device!!</p>
+      <h2>Trainman - Our Mission</h2> 
+      <h3>Trainman Travel Booking Site - Our Mission</h3> 
+  
+  <p>Trainman is an IRCTC authorised online train ticket booking platform made with the purpose to make train travel more convenient with our comprehensive list of solutions. There's nothing like piercing through the heart of a big city and busting through the rich villages of India.</p>
+  <p>Whether you want to enjoy Shimla's Toy Train or the exquisite Dudhsagar waterfall from the square window, let us know about your journey. And we promise to recommend the best prices on your train ticket booking along with services that are unheard of.</p>
+  <p>All the extensive paperwork, travel schedule timings, delayed or too early, coach position - Maybe let's not worry about it once? Train ticket booking should involve extensive plans for enjoyment and not a checklist. train ticket booking through Trainman feels like home, with a partner that you can trust and rely upon.</p>
+  <p>Search by name or travel between stations to seamlessly get all the desired results with our online train ticket booking platform.</p>
+  <p>More than 10mn+ plus users already trust us with their train ticket booking. Pay online through Trainman wallet now and start your travel journey! Trainman maintains one of India's largest and most up-to-date train databases. The following features are included in our mobile app: Train Search - Seat / Berth Availability with Predictions,PNR Status - with Predictions of Confirmation Time Table/Schedule - with Offline Access, Seat Availability . You can manage your trips, inquire about fares, and use a fare calculator for Indian rail travelers while booking online train tickets.</p>
+  <p>Developed with a strong focus on different technological initiatives that blend the latest technologies with innovative solutions to confer your every need. Trainman is a perfect amalgamation of creativity and innovation that crafts the most advanced solutions for all your problems.</p>
+  <h3>Trainman Train Ticket Reservation</h3>
+  <p>With a route length of more than 65,000 kilometers, Indian Railways is one of the world's largest rail networks. The Indian Railway Catering and Tourism Corporation (IRCTC) is the public face of India's online train ticket buying system.</p>
+  <p>Trainman is the top online booking portal for train tickets, providing the most simple options to book train tickets, check train schedules, train availability, and monitor live train status. IRCTC has long been the most popular website for booking train tickets.</p>
+  <p>Train travel is a popular mode of transportation for both short commutes and extended journeys, and with good reason. Traveling by rail is the most convenient means of transportation in India, with over a thousand routes linking cities.</p>
+  <p>Train travel is a great option for travelers because of the combination of price, convenience, and speed. Trainman railway booking technology now allows travelers to search routes, compare costs, and book train tickets.You can also use the Trainman app for quick access.</p>
+  <p>Trainman provides you with the most dependable and secure train booking service, and all you have to do is organize your route. Our consumers will find the site to be user-friendly. Instead of standing in line for hours to book a train ticket, you can go to the website.</p>
+  <p>Trainman's online railway ticket booking technology allows you to book your travel package from any location. All you have to do is input your IRCTC login details and you'll have all the information you need.</p>
+  <h2>Why Choose Trainman?</h2>
+  <p>For train ticket booking, use the IRCTC authorised partner app. Increase your chances of receiving confirmed train tickets by using our same train alternates and forecast feature.</p>
+  <p>Book tickets on this IRCTC authorised App and get additional benefits such as a 100% refund on cancellation, fast refund initiation, PNR status and confirmation notification, train tracks, and dedicated 24X7 customer service.</p>
+  <h3>Features of Trainman</h3>
+  <p>Train ticket booking app - Complete train booking app for Indian railways - tickets, train status, PNR status, Platform number and coach position to board, Rail Wisdoms.</p>
+  <p>Live Train Running Status - The best Indian railway app for finding out where my train is running. Get the status of your train's delay or on-time arrival. The GPS feature in the app allows you to see the estimated train arrival time (ETA) at upcoming stations. Even if they are not connected to the internet, travelers can check the live train location by typing the train name or number.
+PNR Status and Confirmation Probability - Check your PNR Status and Confirmation Probability to see how likely your waitlisted tickets are to be confirmed.
+Indian Railways Train Time Table - Download the Trainman train app for the most up-to-date Indian Railways train schedule (even in offline mode). Check the status of trains between stations in real time.</p>
+  <p>Trainman is the best railway app for train ticket bookings, train coach layouts, live train running status, PNR prediction, and other rail-related information.
+Train Fare Enquiry - The quickest way to book a train ticket online. View booking fares for Rajdhani, Duronto, Shatabdi, Jan Shatabdi, Garib Rath, and other trains between stations and coach types. Enjoy the added convenience of hassle-free trip planning and quicker train ticket buying. With Trainman, you can get a quick refund on online ticket cancellations.</p>
+  <p>Switch To Preferred Language - Use your preferred language to navigate the app. English, Hindi, Marathi, Telugu, Malayalam, Kannada, Bengali, Tamil, and Gujrati are among the languages available.</p>
+  <h3>What Makes Trainman Different?</h3>
+  <p>Keeps you up to date on PNR status changes via alerts:</p>
+  <ul>
+    <li>Aids in the prediction of PNR status confirmations for waitlisted tickets before charting preparations, allowing you to make an informed decision regarding your voyage.</li>
+    <li>View trends in wait times for specific trains.</li>
+  </ul>
+  <p>Live GPS Tracking & Schedules -<br>
+  Train Timings & Schedules are automatically saved, allowing you to view them as well as the live train status in offline mode!<br>
+  If you've ever been concerned about train delays, your current location, or your projected arrival time, or if you've ever wondered, "Where is my Train?" The live GPS tracking software from Trainman is ideal!<br>
+  Get real-time information on the Train Coach Position.<br>
+  Offline & Online - Live train monitoring using GPS, current location + position of railway coaches</p>
+  <h3>A Step Ahead- Information Based Travel With Trainman</h3>
+  <p>We will make sure that traveling on waitlisted tickets is a thing of the past for you! The next time you discover that all of the trains are on hold, don't worry since we are your one-stop-shop for all train ticket booking troubles and concerns!</p>
+  <h2>IRCTC (Indian Railway Catering and Tourism Corporation)</h2>
+  <p>On the website of IRCTC, one can check the status of their PNR, view their tickets, print them, or cancel them. The Indian Railways website generates thousands of bookings each day; it all started with IRCTC deciding to reduce agent dependency, the stress of queuing at the railway counter, and so on.</p>
+  <p>People now have the luxury of browsing numerous trains for their journey, understanding the arrival and departure stations of the train they like to travel to, planning their budget, and then booking their train ticket accordingly, thanks to the establishment of online train ticket booking.</p>
+  <p>IRCTC is a platform where you can primarily book train tickets online, as well as organize your vacation, order meals, and book train tourism packages. IRCTC is the market leader in online train tickets booking and also offers I-tickets, which are simply normal tickets that are ordered online and delivered to your door via post. The IRCTC website is one of the busiest. Apart from online railway ticket purchasing, it provides 24*7 help for train timetables, train routes, train ticketing, train rates, and seat availability.</p>
+  <p>Allow us to demonstrate our magic by forecasting your train tickets confirmation chances before you book! We are here to support everyone, whether you are a daily commuter, a business traveler, or on holiday. Trainman manages one of India's largest and most up-to-date train databases.</p>
+  <li>Trainman is a one-stop-shop that helps enlighten the blind corners by providing software-led solutions to track and analyze the reservation data, enhance the user experience, and simplify checking running and PNR status.</li>
+  <li>Using valuable insights and predictive analysis, Trainman makes sense of a vast amount of data to efficiently predict ticket confirmation status with 95 percent accuracy.</li>
+  <li>Our app available for both iOS and Android, with over 10mn+ installations, helps people discover proactive ways to look for several trains between stations and easily book train tickets based on classes.</li>
+  <li>PNR status data with Confirmation Probability.</li>
+  <li>Live Train Status, but with a real-time GPS Location system that adds to the joy and fascination of the experience.</li>
+  <li>Train timetable has Offline timetable capability, so that it may be checked without Internet connectivity.</li>
+  <li>You can prevent delayed trains by researching the operating times of trains between two stops.</li>
+  <li>If you use local trains and metros on a daily basis, Trainman has all the information you need.</li>
+  <li>If you use local trains and metros on a daily basis, Trainman has all the information you need.Fantasy and entertainment: Learn the real-time speed of your train as well as numerous knowledge about Indian Railways and stops.</li>
+  <li>Trip Sharing in Real-Time.</li>
+  <p>We aspire to create the most responsive, mobile-friendly website, answering all of your rail travel questions in a few taps. A comprehensive center of railway travel information dedicated to providing its users with intelligent information, all under one roof, to help them plan and make smarter train travel decisions.</p>
+   </span>
+   </div>
+      <a href="javascript:void(0);" id="toggle-button" onclick="toggleReadMore()">Read More</a>
+ </div>
+
+
+
+
+  <div class="nav-section">
+   <div class="nav-item">
+    <i class="fa-solid fa-comments icon" style="color: #fe6602;"></i>
+    <h3>Chat Support</h3>
+    <p>Looking for something? We are here for you. Ask away!</p>
+   </div>
+   <div class="nav-item">
+    <i class="fa-solid fa-circle-question icon"style="color: #fe6602;"></i>
+    <h3>FAQs</h3>
+    <p>All your frequently asked questions, answered in one place</p>
+   </div>
+   <div class="nav-item">
+    <i class="fa-solid fa-mobile-screen-button icon" style="color: #fe6602;"></i>
+    <h3>Download App</h3>
+    <p>Get the App and access a world of goodness</p>
+   </div>
+  </div>
+ </div>
+
+
+
+</div> 
+
+ 
+
+<footer class="footer">
+ <div class="footer-inner"> 
+   <h4>Popular Train Routes</h4>
+   <p>
+Delhi to Mumbai Trains|
+Delhi to Jaipur Trains|
+Mumbai to Pune Trains|
+New Delhi to Patna Jn Trains|
+Patna Jn to New Delhi Trains|
+Kanpur Central to New Delhi Trains|
+New Delhi to Kanpur Central Trains|
+Chennai Central to Bengaluru City Jn Trains|
+Bengaluru City Jn to Chennai Central Trains|
+New Delhi to Chandigarh Trains|
+Ahmedabad Jn to Surat Trains|
+Chennai Central to Coimbatore Jn Trains|
+Howrah Jn to New Delhi Trains|
+Surat to Ahmedabad Jn Trains|
+New Delhi to Prayagraj Allahabad Junction Trains</p>
+
+  <h4>Popular Trains</h4>
+  <p>Avadh Express|
+Bihar S Kranti|
+Avadh Exp|
+Amrapali Express|
+Avadh Assam Exp|
+Golden Temple M|
+Ltt Jaynagar Ex|
+Avadh Assam Exp|
+Mangladweep Exp|
+Purushottam Exp|
+Aravali Exp|
+Hwh Smvb Exp|
+Netaji Express|
+Amritsar Howrah Mail|
+Mumbai Mail|
+Vikramshila Exp|
+North East Express|
+Sapt Kranti Exp|
+Howrah Amritsar Mail|
+Navjeevan Exp|
+Kerala Sf Exp|
+Kolkata Mail|
+Mahananda Exp|
+Mngla Lksdp Exp|
+Netaji Express</p>
+
+   <h4>Popular Railway Stations</h4>
+   <p>New Delhi|
+Patna Jn|
+Kanpur Central|
+Chennai Central|
+Bengaluru City Jn|
+Vaishno Devi Katra|
+Chandigarh|
+Ahmedabad Jn|
+Surat|
+Vishakapatnam|
+Secunderabad Jn|
+Coimbatore Jn|
+Surat|
+Darbhanga Jn|
+Secunderabad Jn|
+Vishakapatnam|
+Lokmanya Tilak Term|
+Gorakhpur Jn|
+Howrah Jn|
+Prayagraj Allahabad Junction|
+Muzaffarpur Jn</p>
+
+
+
+
+   <div class="footer-columns">
+     <div class="footer-column">
+       <h4>Company</h4>
+       <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+     </div>
+
+     <div class="footer-column">
+      <h4>Service</h4>
+      <ul>
+        <li><a href="#">PNR Status</a></li>
+        <li><a href="#">Coach Position</a></li>
+        <li><a href="#">Running Status</a></li>
+        <li><a href="#">Seat Availability</a></li>
+        <li><a href="#">Time Table</a></li>
+        <li><a href="#">Fare Calculator</a></li>
+        <li><a href="#">Station Details</a></li>
+      </ul>
+     </div>
+
+     <div class="footer-column">
+      <h4>Features</h4>
+      <ul>
+        <li><a href="#">Trip Assurance</a></li>
+        <li><a href="#">Free Cancellation</a></li>
+      </ul>
+     </div>
+
+     <div class="footer-column">
+      <h4>Help & Support</h4>
+      <ul>
+        <li><a href="#">Chat Support</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+     </div>
+
+     <div class="footer-column">
+      <h4>Connect with Us</h4>
+      <ul>
+      <li><a href="mailto:feedback@trainman.in"><i class="fa-regular fa-envelope"></i> feedback@trainman.in</a></li></ul>
+      <h4>Scan to Download App</h4>
+      <img src="qr.jpg" alt="QR Code" class="qr-code">
+      <br>
+      <img src="logo.png" alt="trainGurl Logo" class="logo" />
+      <span class="brand">trainGurl<sup>®</sup></span>
+      <span>|</span>
+      <img src="logo2.png" alt="App2" />
+     </div>
+    </div>
+   <hr>
+
+    <div class="footer-bar">
+    <div class="footer-left">
+    <a href="https://www.facebook.com/trainman.in" target="_blank">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://x.com/TrainmanIn" target="_blank">
+      <i class="fa-solid fa-x"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/trainman/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCNDb5CM7EvPHgEvgcuS7UQQ" target="_blank" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://www.instagram.com/trainman_official/" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    </div>
+    <div class="footer-right">
+    <a href="https://apps.apple.com/in/app/train-booking-pnr-trainman/id962054633" target="_blank">
+      <img src="apple.png" alt="Download on the App Store" />
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=in.trainman.trainmanandroidapp&pli=1" target="_blank">
+      <img src="playstore.png" alt="Get it on Google Play" />
+    </a>
+     </div>
+  <hr>
+  </div>
+  <div class="footer-bottom">
+  <span>© Copyright 2014-2025. Stark Enterprise Private Limited
+  </span>
+  </div>
+ </div>  
+</footer>
+
+
+
+<script src="train.js"></script>
+</body>
+</html>
