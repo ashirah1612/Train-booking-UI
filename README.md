@@ -3,8 +3,11 @@
 
 ## Live Demo
 
-👉 https://ashirah1612.github.io/Train-booking-UI/
+https://ashirah1612.github.io/Train-booking-UI/
 
+## Preview
+
+<img width="1897" height="859" alt="traingurl" src="https://github.com/user-attachments/assets/828f9f1a-5ed5-4e2a-b0a9-c7bcefdb8965" />
 
 ## 📌 Overview
 
@@ -58,3 +61,5 @@ This project was created to practice:
 
 This is a **frontend-only project**.
 No backend or real ticket booking functionality is implemented.
+
+
